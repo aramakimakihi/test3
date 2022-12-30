@@ -1,4 +1,38 @@
-<html>
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charesrt="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>スマート農法</title>
+
+<link rel="stylesheet"href="mystyle.css">
+
+<style>
+    .parent ul{
+      display: none;
+    }
+    .active {
+      background-color: rgb(172, 228, 244);
+    }
+    .active ul {
+      display: block;
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+    <h1><font color=#000000>スマート農業</font></h1>
+</header>
+    
+ここではARの中にある「ドローン」「スマートフォン」「人参」を探してみよう！
+    
+    <html>
     <head>
         <title>Title</title>
         <meta charset="utf-8" />
@@ -18,3 +52,38 @@
         ></model-viewer>
     </body>
 </html>
+
+<ul>
+    <li class="parent" onclick="func1(this)">遊び方
+      <ul>
+        <li>次のページの一番上にある丸いボタンを押すとゲームがはじまります．</li>
+      </ul>
+    </li>
+    <li class="parent" onclick="func1(this)">回答と解説
+      <ul>
+        <li>回答｛「ドローン」は畑の上にとんでるよ．｝</li>
+        <li>回答｛「スマートフォン」は机の上においてあるよ．｝</li>
+        <li>回答｛「人参」は青いかごの中に入っているよ．｝</li>
+        <li>解説｛「スマート農業」は最先端技術を使って農家さんがいい野菜をたくさん作れたり，環境にいい農業ができるようにする農法のことです！｝</li>
+      </ul>
+    </li>
+  </ul>
+    
+    
+<main>
+    <h2>
+        <a href="https://aramakimakihi.github.io/test/" target="_blank">次のゲーム</a>
+    </h2>
+</main>
+    
+  <script>
+    function func1(e) {
+      e.classList.toggle("active");
+    }
+  </script>
+
+<footer>
+        近畿大学工学部情報学科教育情報システム研究室
+</footer>
+</body>
+
